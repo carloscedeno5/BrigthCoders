@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
@@ -14,7 +15,6 @@ html,body{
     background-size: cover;
     background-position: center;
     height: 100%;
-    box-sizing: border-box;
 }
 header{
     width: 100%;
@@ -37,6 +37,7 @@ header .menu{
     max-width: 500px;
     /* background: #f2f2f2; */
     list-style: none;
+    margin: 20px 0;
     padding: 0;
     right: 0;
     float: right;
@@ -60,32 +61,45 @@ header .menu{
 }
 @media screen and (max-width:800px){
     header{
-        width: 80%;
+        width: 50%;
         height: 100%;
         /* margin: 0; */
         display: flex;
-        background: #000;
+        flex-direction: column;
+        background: rgba(76, 175, 80, 0.1);
         float: right;
+        overflow: hidden;
     }
     header .logo img{
         height: 60px;
         max-width: 100%;
-        background: #fff;
+        /* background: #fff; */
         display: block;
     }
-    .logo{
+    header .logo{
         width: 100%;
-        position: center;
+        height: 60px;
+        /* background: green; */
+        display: block;
     }
     .menu{
         width: 100%;
-        /* background: #fff;
-        color: #000; */
+        margin: 20px 0;
     }
     .menu li{
         display: block;
         text-align: center;
-        /* color: #000; */
+    }
+    .btn-menu-bar{
+        width: 60px;
+        height: 60px;
+        display: block;
+        padding: 20px;
+        background: #000;
+        color: #fff;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
     }
 
 }
@@ -112,7 +126,7 @@ article{
 }
 article .contenido .tecnologias p{
     display: inline-block;
-    margin: 20px 30px;
+    margin: 30px 30px;
 }
 footer {
     color: #fff;
